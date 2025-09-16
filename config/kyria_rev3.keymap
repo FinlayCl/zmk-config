@@ -37,6 +37,15 @@
             bindings = <&kp DOT>, <&kp QMARK>;
             mods = <MOD_LSFT>;
         };
+        magickey: magic_key {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "MAGIC_KEY";
+            #binding-cells = <0>;
+            defaults = <&kp A>;
+            bindings = <&kp U>, <&kp O>;
+            antecedents = <Q Z>;
+            max-delay-ms = <250>;
+        };
     };
 
     keymap {
@@ -45,12 +54,12 @@
         default_layer {
             display-name = "Default Layer";
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  V  |  M  |  L   |  C   |  P   |                                         |  B   |  U    |  U    |  O   |   Q   |  DEL |
-            // |  BSPC |  S  |  T  |  R   |  D   |  Y   |                                         |  F   |  N    |  E    |  A   |   I   |  RET |
-            // | SHIFT |  X  |  K  |  J   |  G   |  W   | L SHIFT| L SHIFT |  | LAYER 1 | L SHIFT |  Z   |  H    |  '    |  ,   |   .   | SHIFT|
+            // |  ESC  |  V  |  M  |  L   |  C   |  P   |                                         |  B   |  MGK   |  U    |  O   |   Q   |  DEL |
+            // |  BSPC |  S  |  T  |  R   |  D   |  Y   |                                         |  F   |  N     |  E    |  A   |   I   |  RET |
+            // | SHIFT |  X  |  K  |  J   |  G   |  W   | L SHIFT| L SHIFT |  | LAYER 1 | L SHIFT |  Z   |  H     |  '    |  ,   |   .   | SHIFT|
             //                     | GUI  | GUI  | SPACE|  RPT   |   FN    |  |  LALT   | LAYER 1 | TAB  | LCTRL  | R-ALT |
             bindings = <
-            &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &kp U &kp U    &kp O     &kp Q   &kp DEL
+            &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magic_key &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
             &kp LSHFT &kp X &kp K &kp J &kp G &kp W &kp LSHFT &kp LSHFT          &mo 1    &kp LSHFT &kp Z     &kp H &kp APOS &comexcl  &kp DOT &kp RSHFT
                         &kp SEMI  &kp LGUI &kp SPACE &key_repeat &mo 1           &kp LALT &kp TAB   &mo 1 &kp LCTRL &kp RALT
