@@ -31,6 +31,12 @@
             bindings = <&kp COMMA>, <&kp EXCL>;
             mods = <MOD_LSFT>;
         };
+        dotquest: dot_question_mark {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp QMARK>;
+            mods = <MOD_LSFT>;
+        };
     };
 
     keymap {
