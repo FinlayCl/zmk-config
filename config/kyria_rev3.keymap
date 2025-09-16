@@ -30,15 +30,15 @@
         default_layer {
             display-name = "Default Layer";
             // ---------------------------------------------------------------------------------------------------------------------------------
-            // |  ESC  |  V  |  M  |  L   |  C   |  P   |                                          |  B   |  U    |  U    |  O   |   Q   |  DEL |
-            // |  BSPC |  S  |  T  |  R   |  D   |  Y   |                                          |  F   |  N    |  E    |  A   |   I   |  RET |
-            // | SHIFT |  X  |  K  |  J   |  G   |  W   | L SHIFT| L SHIFT |  | LAYER 1 | L SHIFT |  Z   |  H    |  '    |  ,   |   /   | SHIFT|
-            //                     | GUI  | GUI  | SPACE|  RPT   |   FN    |  |  LALT   | LAYER 1 | TAB  | BSPC  | R-ALT |
+            // |  ESC  |  V  |  M  |  L   |  C   |  P   |                                         |  B   |  U    |  U    |  O   |   Q   |  DEL |
+            // |  BSPC |  S  |  T  |  R   |  D   |  Y   |                                         |  F   |  N    |  E    |  A   |   I   |  RET |
+            // | SHIFT |  X  |  K  |  J   |  G   |  W   | L SHIFT| L SHIFT |  | LAYER 1 | L SHIFT |  Z   |  H    |  '    |  ,   |   .   | SHIFT|
+            //                     | GUI  | GUI  | SPACE|  RPT   |   FN    |  |  LALT   | LAYER 1 | TAB  | LCTRL  | R-ALT |
             bindings = <
-            &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B   &kp U     &kp U    &kp O     &kp Q   &kp DEL
-            &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F   &kp N     &kp E    &kp A     &kp I   &kp RET
-            &kp LSHFT &kp X &kp K &kp J &kp G &kp W &kp LSHFT &kp LSHFT          &mo 1    &kp LSHFT &kp Z   &kp H     &kp APOS &kp COMMA &kp DOT &kp RSHFT
-                        &kp SEMI  &kp LGUI &kp SPACE &key_repeat &mo 1           &kp LALT &mo 1     &kp TAB &kp LCTRL &kp RALT
+            &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &kp U &kp U    &kp O     &kp Q   &kp DEL
+            &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
+            &kp LSHFT &kp X &kp K &kp J &kp G &kp W &kp LSHFT &kp LSHFT          &mo 1    &kp LSHFT &kp Z     &kp H &kp APOS &kp COMMA &kp DOT &kp RSHFT
+                        &kp SEMI  &kp LGUI &kp SPACE &key_repeat &mo 1           &kp LALT &kp TAB   &mo 1 &kp LCTRL &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -51,10 +51,10 @@
             // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
-            &trans &kp LPAR  &kp RPAR &kp ASTRK &kp LBKT &kp RBKT                                &trans &trans &trans &trans &trans &trans
-            &trans &kp EQUAL &kp PLUS &kp MINUS &kp GT   &kp TILDE                               &trans &trans &trans &trans &trans &trans
-            &trans &kp PIPE  &kp FSLH &kp BSLH  &kp LT   &kp CARET &trans &trans                 &trans &trans &trans &trans &trans &trans &trans &trans
-                                 &trans &trans &trans &trans &trans                &trans &trans &trans &trans &trans
+            &trans &kp LPAR  &kp RPAR &kp ASTRK &kp LBKT &kp RBKT                                     &trans &trans &trans &trans &trans &trans
+            &trans &kp EQUAL &kp PLUS &kp MINUS &kp GT   &kp TILDE                                    &trans &trans &trans &trans &trans &trans
+            &trans &kp PIPE  &kp FSLH &kp BSLH  &kp LT   &kp CARET &trans &kp AMPS      &trans &trans &trans &trans &trans &trans &trans &trans
+                                      &kp HASH &trans    &trans    &trans &trans        &trans &trans &trans &trans &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
