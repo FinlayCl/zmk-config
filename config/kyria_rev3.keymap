@@ -24,6 +24,15 @@
 
 
 / {
+    behaviors {
+        comexcl: comma_exclamation_mark {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp EXCL>;
+            mods = <MOD_LSFT>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -37,7 +46,7 @@
             bindings = <
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &kp U &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
-            &kp LSHFT &kp X &kp K &kp J &kp G &kp W &kp LSHFT &kp LSHFT          &mo 1    &kp LSHFT &kp Z     &kp H &kp APOS &kp COMMA &kp DOT &kp RSHFT
+            &kp LSHFT &kp X &kp K &kp J &kp G &kp W &kp LSHFT &kp LSHFT          &mo 1    &kp LSHFT &kp Z     &kp H &kp APOS &comexcl  &kp DOT &kp RSHFT
                         &kp SEMI  &kp LGUI &kp SPACE &key_repeat &mo 1           &kp LALT &kp TAB   &mo 1 &kp LCTRL &kp RALT
             >;
 
