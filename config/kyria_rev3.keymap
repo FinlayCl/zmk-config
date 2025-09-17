@@ -225,6 +225,7 @@
             #binding-cells = <0>;
             bindings = <&magickey>, <&kp N7>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
+            keep-mods = <(MOD_LGUI|MOD_RGUI)>;
         };
     };
 
@@ -241,8 +242,8 @@
             bindings = <
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magicworkspace &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
-            &sk LSHFT &kp X &kp K &kp J &kp G &kp W &sk LSHFT &sk LSHFT          &mo 1    &sk LSHFT &kp Z     &kp H &kp APOS &comexcl  &dotquest &sk RSHFT
-                        &kp SEMI  &kp LGUI &kp SPACE &sk LCTRL &mo 2           &sk LALT &mo 1 &smartrepeat &kp TAB &tog 3
+            &sk LSHFT &kp X &kp K &kp J &kp G &kp W &sk LSHFT &sk LSHFT          &sl 1    &sk LSHFT &kp Z     &kp H &kp APOS &comexcl  &dotquest &sk RSHFT
+                        &kp SEMI  &kp LGUI &kp SPACE &sk LCTRL &mo 2           &sk LALT &sl 1 &smartrepeat &kp TAB &tog 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
