@@ -32,6 +32,62 @@
             tap-ms = <10>;
             bindings = <&macro_tap &kp E &kp F &kp O &kp R &kp E>;
         };
+        imagic: i_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp O &kp N>;
+        };
+        jmagic: j_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp U &kp S &kp T>;
+        };
+        mmagic: m_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp E &kp N &kp T>;
+        };
+        nmagic: n_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp I &kp O &kp N>;
+        };
+        tmagic: t_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp M &kp E &kp N &kp T>;
+        };
+        vmagic: v_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp E &kp R>;
+        };
+        wmagic: w_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp H &kp I &kp C &kp H>;
+        };
+        xmagic: x_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp E &kp S>;
+        };
     };
 
     behaviors {
@@ -51,9 +107,9 @@
             compatible = "zmk,behavior-antecedent-morph";
             label = "MAGIC_KEY";
             #binding-cells = <0>;
-            defaults = <&kp A>;
-            bindings = <&kp O>, <&bmagic>, <&kp Y>;
-            antecedents = <A B C>;
+            defaults = <&kp N>;
+            bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P> ;
+            antecedents = <A B C D E G I J K L M N O P R S T U V W X Y>;
             max-delay-ms = <250>;
         };
     };
