@@ -137,6 +137,27 @@
             tap-ms = <10>;
             bindings = <&macro_tap &kp O &kp U>;
         };
+        commarepeat: comma_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp SPACE &kp A &kp N &kp D>;
+        };
+        dotrepeat: dot_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp C &kp O &kp M>;
+        };
+        wspcrepeat: wspc_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp F &kp O &kp R>;
+        };
     };
 
     behaviors {
@@ -166,8 +187,8 @@
             label = "SMART_REPEAT";
             #binding-cells = <0>;
             defaults = <&kp L>;
-            bindings = <&arepeat>, <&brepeat>, <&kp C>, <&kp D>, <&kp E>, <&kp F>, <&kp G>, <&kp H>, <&irepeat>, <&kp J>, <&kp K>, <&kp L>, <&kp M>, <&kp F>, <&kp O>, <&kp P>, <&kp Q>, <&kp R>, <&kp S>, <&kp T>, <&kp U>, <&kp V>, <&wrepeat>, <&kp X>, <&yrepeat>, <&kp Z>;
-            antecedents = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
+            bindings = <&arepeat>, <&brepeat>, <&kp C>, <&kp D>, <&kp E>, <&kp F>, <&kp G>, <&kp H>, <&irepeat>, <&kp J>, <&kp K>, <&kp L>, <&kp M>, <&kp F>, <&kp O>, <&kp P>, <&kp Q>, <&kp R>, <&kp S>, <&kp T>, <&kp U>, <&kp V>, <&wrepeat>, <&kp X>, <&yrepeat>, <&kp Z>, <&commarepeat>, <&dotrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>;
+            antecedents = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z COMMA DOT SPACE TAB RET APOS LPAR>;
             max-delay-ms = <500>;
         };
     };
