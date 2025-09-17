@@ -110,7 +110,16 @@
             defaults = <&kp N>;
             bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P> ;
             antecedents = <A B C D E G I J K L M N O P R S T U V W X Y>;
-            max-delay-ms = <250>;
+            max-delay-ms = <500>;
+        };
+        smartrepeat: smart_repeat {
+            compatible = "zmk,behavior-antecedent-morph";
+            label = "SMART_REPEAT";
+            #binding-cells = <0>;
+            defaults = <&kp N>;
+            bindings = <&kp O>;
+            antecedents = <A>;
+            max-delay-ms = <500>;
         };
     };
 
