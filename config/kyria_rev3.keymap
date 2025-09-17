@@ -184,6 +184,24 @@
             bindings = <&kp LEFT>, <&mkp MOVE_LEFT>;
             mods = <MOD_LSFT>;
         };
+        downmouse: down_mouse {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOWN>, <&mkp MOVE_DOWN>;
+            mods = <MOD_LSFT>;
+        };
+        upmouse: up_mouse {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp UP>, <&mkp MOVE_UP>;
+            mods = <MOD_LSFT>;
+        };
+        rightmouse: right_mouse {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RIGHT>, <&mkp MOVE_RIGHT>;
+            mods = <MOD_LSFT>;
+        };
         magickey: magic_key {
             compatible = "zmk,behavior-antecedent-morph";
             label = "MAGIC_KEY";
