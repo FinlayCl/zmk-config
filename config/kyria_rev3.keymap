@@ -24,6 +24,15 @@
 
 
 / {
+    macros {
+        bmagic: b_sequence {
+            compatible = "zmk,behavior-macro";
+            wait-ms = <30>;
+            tap-ms = <30>;
+            bindings = <&macro_tap &kp E &kp F &kp O &kp R &kp E>;
+        };
+    };
+
     behaviors {
         comexcl: comma_exclamation_mark {
             compatible = "zmk,behavior-mod-morph";
@@ -42,8 +51,8 @@
             label = "MAGIC_KEY";
             #binding-cells = <0>;
             defaults = <&kp A>;
-            bindings = <&kp U>, <&kp O>;
-            antecedents = <Q Z>;
+            bindings = <&kp O>, <&bmagic>, <&kp Y>;
+            antecedents = <A B C>;
             max-delay-ms = <250>;
         };
     };
