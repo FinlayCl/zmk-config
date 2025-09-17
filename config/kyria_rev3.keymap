@@ -88,6 +88,41 @@
             tap-ms = <10>;
             bindings = <&macro_tap &kp E &kp S>;
         };
+        arepeat: a_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp N &kp D>;
+        };
+        brepeat: b_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp E &kp C &kp A &kp U &kp S &kp E>;
+        };
+        irepeat: i_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp N &kp G>;
+        };
+        wrepeat: w_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp O &kp U &kp L &kp D>;
+        };
+        yrepeat: y_repeat {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp O &kp U>;
+        };
     };
 
     behaviors {
@@ -116,9 +151,9 @@
             compatible = "zmk,behavior-antecedent-morph";
             label = "SMART_REPEAT";
             #binding-cells = <0>;
-            defaults = <&repeat_key>;
-            bindings = <&kp O>;
-            antecedents = <A>;
+            defaults = <&kp L>;
+            bindings = <&arepeat>, <&brepeat>, <&kp C>, <&kp D>, <&kp E>, <&kp F>, <&kp G>, <&kp H>, <&irepeat>, <&kp J>, <&kp K>, <&kp L>, <&kp M>, <&kp F>, <&kp O>, <&kp P>, <&kp Q>, <&kp R>, <&kp S>, <&kp T>, <&kp U>, <&kp V>, <&wrepeat>, <&kp X>, <&yrepeat>, <&kp Z>;
+            antecedents = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z>;
             max-delay-ms = <500>;
         };
     };
