@@ -170,37 +170,37 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp COMMA>, <&kp EXCL>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         dotquest: dot_question_mark {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp QMARK>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         leftmouse: left_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp LEFT>, <&mkp MOVE_LEFT>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         downmouse: down_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp DOWN>, <&mkp MOVE_DOWN>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         upmouse: up_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp UP>, <&mkp MOVE_UP>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         rightmouse: right_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp RIGHT>, <&mkp MOVE_RIGHT>;
-            mods = <MOD_LSFT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         magickey: magic_key {
             compatible = "zmk,behavior-antecedent-morph";
