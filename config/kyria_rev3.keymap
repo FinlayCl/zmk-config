@@ -181,25 +181,25 @@
         leftmouse: left_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp LEFT>, <&mkp MOVE_LEFT>;
+            bindings = <&kp LEFT>, <&mmv MOVE_LEFT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         downmouse: down_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp DOWN>, <&mkp MOVE_DOWN>;
+            bindings = <&kp DOWN>, <&mmv MOVE_DOWN>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         upmouse: up_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp UP>, <&mkp MOVE_UP>;
+            bindings = <&kp UP>, <&mmv MOVE_UP>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         rightmouse: right_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp RIGHT>, <&mkp MOVE_RIGHT>;
+            bindings = <&kp RIGHT>, <&mmv MOVE_RIGHT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         magickey: magic_key {
@@ -266,8 +266,8 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
             &kp F11 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                 &kp F6   &kp F7     &kp F8     &kp F9   &kp F10     &kp F12
-            &trans  &trans &trans &trans &trans &trans                                 &mkp SCRL_UP   &leftmouse &downmouse &upmouse  &rightmouse &trans
-            &trans  &trans &trans &trans &trans &trans &trans &trans     &trans &trans &mkp SCRL_DOWN &mkp LCLK  &mkp RCLK  &mkp MCLK &trans      &trans
+            &trans  &trans &trans &trans &trans &trans                                 &msc SCRL_UP   &leftmouse &downmouse &upmouse  &rightmouse &trans
+            &trans  &trans &trans &trans &trans &trans &trans &trans     &trans &trans &msc SCRL_DOWN &mkp LCLK  &mkp RCLK  &mkp MCLK &trans      &trans
                                   &trans &trans &trans &trans &trans     &trans &trans &trans         &trans     &trans
             >;
 
