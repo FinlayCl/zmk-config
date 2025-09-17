@@ -220,6 +220,12 @@
             antecedents = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z COMMA DOT SPACE TAB RET APOS LPAR>;
             max-delay-ms = <1000>;
         };
+        magicworkspace: magic_workspace {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&magickey>, <&kp N7>;
+            mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
     };
 
     keymap {
@@ -233,7 +239,7 @@
             // | SHIFT |  X  |  K  |  J   |  G   |  W   | L SHIFT| L SHIFT |  | LAYER 1 | L SHIFT |  Z   |  H     |  '    |  ,   |   .   | SHIFT|
             //                     | GUI  | GUI  | SPACE|  RPT   |   FN    |  |  LALT   | LAYER 1 | TAB  | LCTRL  | R-ALT |
             bindings = <
-            &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magickey &kp U    &kp O     &kp Q   &kp DEL
+            &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magicworkspace &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
             &sk LSHFT &kp X &kp K &kp J &kp G &kp W &sk LSHFT &sk LSHFT          &mo 1    &sk LSHFT &kp Z     &kp H &kp APOS &comexcl  &dotquest &sk RSHFT
                         &kp SEMI  &kp LGUI &kp SPACE &sk LCTRL &mo 2           &sk LALT &mo 1 &smartrepeat &kp TAB &tog 3
