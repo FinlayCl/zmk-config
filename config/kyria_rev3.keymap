@@ -209,7 +209,7 @@
             defaults = <&kp N>;
             bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>;
             antecedents = <A B C D E G I J K L M N O P R S T U V W X Y COMMA DOT MINUS EQUAL SPACE TAB RET APOS LPAR>;
-            max-delay-ms = <500>;
+            max-delay-ms = <1000>;
         };
         smartrepeat: smart_repeat {
             compatible = "zmk,behavior-antecedent-morph";
@@ -218,7 +218,7 @@
             defaults = <&kp L>;
             bindings = <&arepeat>, <&brepeat>, <&kp C>, <&kp D>, <&kp E>, <&kp F>, <&kp G>, <&kp H>, <&irepeat>, <&kp J>, <&kp K>, <&kp L>, <&kp M>, <&kp F>, <&kp O>, <&kp P>, <&kp Q>, <&kp R>, <&kp S>, <&kp T>, <&kp U>, <&kp V>, <&wrepeat>, <&kp X>, <&yrepeat>, <&kp Z>, <&commarepeat>, <&dotrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>;
             antecedents = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z COMMA DOT SPACE TAB RET APOS LPAR>;
-            max-delay-ms = <500>;
+            max-delay-ms = <1000>;
         };
     };
 
@@ -235,8 +235,8 @@
             bindings = <
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magickey &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
-            &kp LSHFT &kp X &kp K &kp J &kp G &kp W &kp LSHFT &kp LSHFT          &mo 1    &kp LSHFT &kp Z     &kp H &kp APOS &comexcl  &dotquest &kp RSHFT
-                        &kp SEMI  &kp LGUI &kp SPACE &kp LCTRL &mo 2           &kp LALT &smartrepeat   &mo 1 &kp TAB &tog 3
+            &sk LSHFT &kp X &kp K &kp J &kp G &kp W &sk LSHFT &sk LSHFT          &mo 1    &sk LSHFT &kp Z     &kp H &kp APOS &comexcl  &dotquest &sk RSHFT
+                        &kp SEMI  &kp LGUI &kp SPACE &sk LCTRL &mo 2           &sk LALT &mo 1 &smartrepeat &kp TAB &tog 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
