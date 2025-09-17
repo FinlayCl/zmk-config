@@ -116,7 +116,7 @@
             compatible = "zmk,behavior-antecedent-morph";
             label = "SMART_REPEAT";
             #binding-cells = <0>;
-            defaults = <&kp N>;
+            defaults = <&repeat_key>;
             bindings = <&kp O>;
             antecedents = <A>;
             max-delay-ms = <500>;
