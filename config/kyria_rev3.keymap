@@ -27,6 +27,7 @@
     macros {
         bmagic: b_sequence {
             compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
             wait-ms = <30>;
             tap-ms = <30>;
             bindings = <&macro_tap &kp E &kp F &kp O &kp R &kp E>;
