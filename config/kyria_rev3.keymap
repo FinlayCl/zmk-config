@@ -287,10 +287,10 @@
             // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
-            &trans  &trans &trans &trans &trans &trans                                 &trans   &trans     &trans     &trans   &trans      &trans
-            &trans  &trans &trans &trans &trans &trans                                 &trans   &leftmouse &downmouse &upmouse &rightmouse &trans
-            &trans  &trans &trans &trans &trans &trans &trans &trans     &trans &trans &trans   &trans     &trans     &trans   &trans      &trans
-                                  &trans &trans &trans &trans &trans     &trans &trans &trans   &trans     &trans
+            &trans  &trans &trans &trans &trans &trans                                 &trans    &trans     &trans     &trans   &trans      &trans
+            &trans  &trans &trans &trans &trans &trans                                 &trans    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans
+            &trans  &trans &trans &trans &trans &trans &trans &trans     &trans &trans &trans    &trans     &trans     &trans   &trans      &trans
+                                  &trans &trans &trans &trans &trans     &trans &trans &kp LSHFT &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
