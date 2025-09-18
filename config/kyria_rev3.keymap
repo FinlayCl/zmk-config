@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/keys.h>
 
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // default: 600
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 10   // default: 10
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 600   // default: 10
 
 #include <dt-bindings/zmk/pointing.h>
 
@@ -272,9 +272,9 @@
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
             &kp F11 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                 &kp F6         &kp F7    &kp F8    &kp F9    &kp F10   &kp F12
-            &trans  &trans &trans &trans &trans &trans                                 &msc SCRL_UP   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
-            &trans  &trans &trans &trans &trans &trans &trans &mo 3     &trans &trans &msc SCRL_DOWN &mkp LCLK &mkp RCLK &mkp MCLK &trans    &trans
-                                  &trans &trans &trans &trans &trans     &trans &trans &trans         &trans    &trans
+            &trans  &trans &trans &mkp LCLK &mkp RCLK &trans                                 &msc SCRL_UP   &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
+            &trans  &trans &trans &trans &trans &trans &trans &mo 3     &trans &trans  &msc SCRL_DOWN &mkp LCLK &mkp RCLK &mkp MCLK &trans    &trans
+                                  &trans &trans &trans &trans &trans     &trans &kp LCTRL &kp LSHFT      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -290,7 +290,7 @@
             &trans  &trans &trans &trans &trans &trans                                 &trans    &trans     &trans     &trans   &trans      &trans
             &trans  &trans &trans &trans &trans &trans                                 &trans    &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_UP &mmv MOVE_RIGHT &trans
             &trans  &trans &trans &trans &trans &trans &trans &trans     &trans &trans &trans    &trans     &trans     &trans   &trans      &trans
-                                  &trans &trans &trans &trans &trans     &trans &trans &kp LSHFT &trans     &trans
+                                  &trans &trans &trans &trans &trans     &trans &kp LCTRL &kp LSHFT &trans     &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
