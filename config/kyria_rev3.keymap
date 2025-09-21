@@ -34,7 +34,7 @@
             #binding-cells = <0>;
             wait-ms = <10>;
             tap-ms = <10>;
-            bindings = <&macro_tap &kp E &kp F &kp O &kp R &kp E>;
+            bindings = <&macro_tap &kp E &kp C &kp A &kp U &kp S &kp E>;
         };
         imagic: i_sequence {
             compatible = "zmk,behavior-macro";
@@ -112,13 +112,6 @@
             wait-ms = <10>;
             tap-ms = <10>;
             bindings = <&macro_tap &kp N &kp D>;
-        };
-        brepeat: b_repeat {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
-            bindings = <&macro_tap &kp E &kp C &kp A &kp U &kp S &kp E>;
         };
         irepeat: i_repeat {
             compatible = "zmk,behavior-macro";
@@ -206,7 +199,7 @@
             label = "MAGIC_KEY";
             #binding-cells = <0>;
             defaults = <&kp N>;
-            bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>;
+            bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kpT E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>;
             antecedents = <A B C D E G I J K L M N O P R S T U V W X Y COMMA DOT MINUS EQUAL SPACE TAB RET APOS LPAR>;
             max-delay-ms = <1000>;
         };
@@ -215,7 +208,7 @@
             label = "SMART_REPEAT";
             #binding-cells = <0>;
             defaults = <&kp L>;
-            bindings = <&arepeat>, <&brepeat>, <&kp C>, <&kp D>, <&kp E>, <&kp F>, <&kp G>, <&kp H>, <&irepeat>, <&kp J>, <&kp K>, <&kp L>, <&kp M>, <&kp N>, <&kp O>, <&kp P>, <&kp Q>, <&kp R>, <&kp S>, <&kp T>, <&kp U>, <&kp V>, <&wrepeat>, <&kp X>, <&yrepeat>, <&kp Z>, <&commarepeat>, <&dotrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>;
+            bindings = <&arepeat>, <&kp B>, <&kp C>, <&kp D>, <&kp E>, <&kp F>, <&kp G>, <&kp H>, <&irepeat>, <&kp J>, <&kp K>, <&kp L>, <&kp M>, <&kp N>, <&kp O>, <&kp P>, <&kp Q>, <&kp R>, <&kp S>, <&kp T>, <&kp U>, <&kp V>, <&wrepeat>, <&kp X>, <&yrepeat>, <&kp Z>, <&commarepeat>, <&dotrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>, <&wspcrepeat>;
             antecedents = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z COMMA DOT SPACE TAB RET APOS LPAR>;
             max-delay-ms = <1000>;
         };
