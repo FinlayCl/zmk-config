@@ -199,7 +199,7 @@
             label = "MAGIC_KEY";
             #binding-cells = <0>;
             defaults = <&kp N>;
-            bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kpT E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>;
+            bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>;
             antecedents = <A B C D E G I J K L M N O P R S T U V W X Y COMMA DOT MINUS EQUAL SPACE TAB RET APOS LPAR>;
             max-delay-ms = <1000>;
         };
