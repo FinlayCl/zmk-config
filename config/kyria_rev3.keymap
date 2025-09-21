@@ -199,7 +199,7 @@
             label = "MAGIC_KEY";
             #binding-cells = <0>;
             defaults = <&kp N>;
-            bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>;
+            bindings = <&kp O>, <&bmagic>, <&kp K>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>;
             antecedents = <A B C D E G I J K L M N O P R S T U V W X Y COMMA DOT MINUS EQUAL SPACE TAB RET APOS LPAR>;
             max-delay-ms = <1000>;
         };
@@ -218,6 +218,15 @@
             bindings = <&magickey>, <&kp N7>;
             mods = <(MOD_LGUI|MOD_RGUI)>;
             keep-mods = <(MOD_LGUI|MOD_RGUI)>;
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <28 44>;
+            bindings = <&tog 4>;
         };
     };
 
@@ -248,10 +257,10 @@
             // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
-            &trans &kp LPAR  &kp RPAR &kp ASTRK &kp LBKT &kp RBKT                                      &kp POUND  &kp N7 &kp N8 &kp N9 &kp AT    &trans
+            &trans &kp LPAR  &kp RPAR &kp ASTRK &kp LBKT &kp RBKT                                      &kp NUBS  &kp N7 &kp N8 &kp N9 &kp AT    &trans
             &trans &kp EQUAL &kp PLUS &kp MINUS &kp LT   &kp TILDE                                     &kp DOLLAR &kp N4 &kp N5 &kp N6 &kp N0    &trans
             &trans &kp FSLH  &kp PIPE &kp BSLH  &kp GT   &kp CARET  &trans &kp AMPS      &trans &trans &kp UNDER  &kp N1 &kp N2 &kp N3 &kp PRCNT &trans
-                                      &kp NUHS  &trans    &trans    &trans &trans        &trans &trans &trans &trans &kp GRAVE
+                                      &kp HASH  &trans    &trans    &trans &trans        &trans &trans &trans &trans &kp GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
