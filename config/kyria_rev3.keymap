@@ -168,7 +168,7 @@
         aposquote: apostrophe_quote {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp APOS>, <&kp EXCL>;
+            bindings = <&kp APOS>, <&kp AT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
         comexcl: comma_exclamation_mark {
