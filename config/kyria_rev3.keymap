@@ -165,6 +165,12 @@
     };
 
     behaviors {
+        aposquote: apostrophe_quote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp APOS>, <&kp EXCL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         comexcl: comma_exclamation_mark {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -255,9 +261,9 @@
             // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
-            &trans &kp LPAR  &kp RPAR &kp ASTRK &kp LBKT &kp RBKT                                      &kp POUND &kp N7 &kp N8 &kp N9 &kp AT    &trans
+            &trans &kp LPAR  &kp RPAR &kp ASTRK &kp LBKT &kp RBKT                                      &kp POUND &kp N7 &kp N8 &kp N9 &kp DQT  &trans
             &trans &kp EQUAL &kp PLUS &kp MINUS &kp LT   &kp TILDE2                                     &kp DOLLAR &kp N4 &kp N5 &kp N6 &kp N0    &trans
-            &trans &kp FSLH  &kp PIPE &kp NUBS  &kp GT   &kp CARET  &trans &kp AMPS      &trans &trans &kp UNDER  &kp N1 &kp N2 &kp N3 &kp PRCNT &trans
+            &trans &kp FSLH  &kp PIPE2 &kp NUBS  &kp GT   &kp CARET  &trans &kp AMPS     &kp TILDE &trans &kp UNDER  &kp N1 &kp N2 &kp N3 &kp PRCNT &trans
                                       &kp HASH  &trans    &trans    &trans &trans        &trans &trans &trans &trans &kp GRAVE
             >;
 
