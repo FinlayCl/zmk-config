@@ -99,6 +99,13 @@
             tap-ms = <10>;
             bindings = <&macro_tap &kp SPACE &kp B &kp U &kp T>;
         };
+        hashmagic: hash_sequence {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&macro_tap &kp I &kp N &kp C &kp L &kp U &kp D &kp E>;
+        };
         wspcmagic: wspc_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -199,8 +206,8 @@
             label = "MAGIC_KEY";
             #binding-cells = <0>;
             defaults = <&kp N>;
-            bindings = <&kp O>, <&bmagic>, <&kp K>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>;
-            antecedents = <A B C D E G I J K L M N O P R S T U V W X Y COMMA DOT MINUS EQUAL SPACE TAB RET APOS LPAR>;
+            bindings = <&kp O>, <&bmagic>, <&kp Y>, <&kp Y>, <&kp U>,<&kp Y>, <&imagic>, <&jmagic>, <&kp S>, <&kp K>, <&mmagic>, <&nmagic>, <&kp A>, <&kp Y>, <&kp L>, <&kp K>, <&tmagic>, <&kp E>, <&vmagic>, <&wmagic>, <&xmagic>, <&kp P>, <&commamagic>, <&kp BSLH>, <&kp GT>, <&kp GT>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&wspcmagic>, <&hashmagic>;
+            antecedents = <A B C D E G I J K L M N O P R S T U V W X Y COMMA DOT MINUS EQUAL SPACE TAB RET APOS LPAR NUHS>;
             max-delay-ms = <1000>;
         };
         smartrepeat: smart_repeat {
