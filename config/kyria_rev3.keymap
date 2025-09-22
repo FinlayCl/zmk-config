@@ -226,6 +226,14 @@
             antecedents = <A B C D E F G H I J K L M N O P Q R S T U V W X Y Z COMMA DOT SPACE TAB RET APOS LPAR>;
             max-delay-ms = <1000>;
         };
+        layerrepeat: layer_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&smartrepeat>;
+            display-name = "Mod-Tap";
+        };
         magicworkspace: magic_workspace {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
