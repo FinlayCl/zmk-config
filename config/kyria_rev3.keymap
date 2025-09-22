@@ -32,134 +32,134 @@
         bmagic: b_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp E &kp C &kp A &kp U &kp S &kp E>;
         };
         imagic: i_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp O &kp N>;
         };
         jmagic: j_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp U &kp S &kp T>;
         };
         mmagic: m_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp E &kp N &kp T>;
         };
         nmagic: n_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp I &kp O &kp N>;
         };
         tmagic: t_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp M &kp E &kp N &kp T>;
         };
         vmagic: v_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp E &kp R>;
         };
         wmagic: w_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp H &kp I &kp C &kp H>;
         };
         xmagic: x_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp E &kp S>;
         };
         commamagic: comma_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp SPACE &kp B &kp U &kp T>;
         };
         hashmagic: hash_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp I &kp N &kp C &kp L &kp U &kp D &kp E>;
         };
         wspcmagic: wspc_sequence {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp T &kp H &kp E>;
         };
         arepeat: a_repeat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp N &kp D>;
         };
         irepeat: i_repeat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp N &kp G>;
         };
         wrepeat: w_repeat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp O &kp U &kp L &kp D>;
         };
         yrepeat: y_repeat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp O &kp U>;
         };
         commarepeat: comma_repeat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp SPACE &kp A &kp N &kp D>;
         };
         dotrepeat: dot_repeat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp C &kp O &kp M>;
         };
         wspcrepeat: wspc_repeat {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            wait-ms = <10>;
-            tap-ms = <10>;
+            wait-ms = <5>;
+            tap-ms = <5>;
             bindings = <&macro_tap &kp F &kp O &kp R>;
         };
     };
@@ -247,7 +247,7 @@
             bindings = <
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magicworkspace &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
-            &sk LSHFT &kp X &kp K &kp J &kp G &kp W &sk LSHFT &sk LSHFT          &sl 1    &sk LSHFT &kp Z     &kp H &kp APOS &comexcl  &dotquest &sk RSHFT
+            &sk LSHFT &kp X &kp K &kp J &kp G &kp W &sk LSHFT &sk LSHFT          &sl 1    &sk LSHFT &kp Z     &kp H &aposquote &comexcl  &dotquest &sk RSHFT
                         &kp SEMI  &kp LGUI &kp SPACE &sk LCTRL &sl 2           &sk LALT &sl 1 &smartrepeat &kp TAB &kp NUHS
             >;
 
