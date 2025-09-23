@@ -169,7 +169,7 @@
         my_lt: my_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "tap-preferred";
+            flavor = "hold-preferred";
             tapping-term-ms = <200>;
             bindings = <&sl>, <&kp>;
             display-name = "My Layer-Tap";
@@ -265,7 +265,7 @@
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magicworkspace &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
             &sk LSHFT &kp X &kp K &kp J &kp G &kp W &sk LSHFT &sk LSHFT          &sl 1    &sk LSHFT &kp Z     &kp H &aposquote &comexcl  &dotquest &sk RSHFT
-                        &kp SEMI  &kp LGUI &my_lt 1 SPACE &sk LCTRL &sl 2           &sk LALT &kp RGUI &layerrepeat 1 0 &kp TAB &kp NUHS
+                        &kp SEMI  &kp LGUI &my_lt 1 SPACE &sk LCTRL &my_lt 2 LBRC           &mt LALT RBRC &kp TAB &layerrepeat 1 0 &kp RGUI &kp NUHS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
