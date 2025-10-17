@@ -264,7 +264,7 @@
             bindings = <
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magicworkspace &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
-            &sk LSHFT &kp X &kp K &kp J &kp G &kp W &mt LCTRL SEMI &sk LSHFT          &sl 1    &mt LCTRL SEMI &kp Z     &kp H &aposquote &comexcl  &dotquest &sk RSHFT
+            &sk LSHFT &kp X &kp K &kp J &kp G &kp W &mt LCTRL SEMI &sk LSHFT          &sl 1    &mt LCTRL NUHS &kp Z     &kp H &aposquote &comexcl  &dotquest &sk RSHFT
                         &kp SEMI  &kp
                          LGUI &kp LGUI &my_lt 1 SPACE &my_lt 2 LBRC           &mt LALT RBRC &layerrepeat 1 0 &kp TAB &kp RGUI &kp NUHS
             >;
