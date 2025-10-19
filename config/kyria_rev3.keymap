@@ -268,13 +268,29 @@
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
             &sk LSHFT &kp X &kp K &kp J &kp G &kp W &mt LCTRL SEMI &sk LSHFT          &sl 1    &mt LCTRL SEMI &kp Z     &kp H &aposquote &comexcl  &dotquest &sk RSHFT
                         &kp SEMI  &kp
-                         LGUI &kp LGUI &my_lt 1 SPACE &my_lt 2 LBRC           &mt LALT RBRC &layerrepeat 1 0 &kp TAB &kp RGUI &kp NUHS
+                         LGUI &kp LGUI &my_lt 2 SPACE &my_lt 3 LBRC           &mt LALT RBRC &layerrepeat 1 0 &kp TAB &kp RGUI &kp NUHS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
-        symbol_layer {
-            display-name = "Symbol Layer";
+        left_symbol_layer {
+            display-name = "Left Symbol Layer";
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  LPAR |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
+            // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
+            // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
+            //                       |      |      |      |      |      |      |      |      |      |      |      |      |
+            bindings = <
+            &trans &kp LPAR  &kp RPAR &kp ASTRK &kp LBKT &kp RBKT                                      &trans &trans &trans &trans &trans &trans
+            &trans &kp EQUAL &kp PLUS &kp MINUS &kp LT   &kp TILDE2                                    &trans &trans &trans &trans &trans &trans
+            &trans &kp FSLH  &kp PIPE2 &kp NUBS  &kp GT   &kp CARET  &trans &kp AMPS     &trans &trans &trans &trans &trans &trans &trans &trans
+                                      &kp HASH  &trans    &trans    &trans &trans        &trans &trans &trans &trans &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+        right_symbol_layer {
+            display-name = "Right Symbol Layer";
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  LPAR |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
             // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
