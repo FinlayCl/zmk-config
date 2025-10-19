@@ -267,8 +267,7 @@
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magicworkspace &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
             &sk LSHFT &kp X &kp K &kp J &kp G &kp W &mt LCTRL SEMI &sk LSHFT          &sl 1    &mt LCTRL SEMI &kp Z     &kp H &aposquote &comexcl  &dotquest &sk RSHFT
-                        &kp SEMI  &kp
-                         LGUI &kp LGUI &my_lt 2 SPACE &my_lt 3 LBRC           &mt LALT RBRC &layerrepeat 1 0 &kp TAB &kp RGUI &kp NUHS
+                        &kp SEMI  &kp LGUI &kp LGUI &my_lt 2 SPACE &my_lt 3 LBRC           &mt LALT RBRC &layerrepeat 1 0 &kp TAB &kp RGUI &kp NUHS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -297,10 +296,10 @@
             // |       |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             //                       |      |      |      |      |      |      |      |      |      |      |      |      |
             bindings = <
-            &trans &kp LPAR  &kp RPAR &kp ASTRK &kp LBKT &kp RBKT                                      &kp POUND &kp N7 &kp N8 &kp N9 &kp DQT  &trans
-            &trans &kp EQUAL &kp PLUS &kp MINUS &kp LT   &kp TILDE2                                     &kp DOLLAR &kp N4 &kp N5 &kp N6 &kp N0    &trans
-            &trans &kp FSLH  &kp PIPE2 &kp NUBS  &kp GT   &kp CARET  &trans &kp AMPS     &kp TILDE &trans &kp UNDER  &kp N1 &kp N2 &kp N3 &kp PRCNT &trans
-                                      &kp HASH  &trans    &trans    &trans &trans        &trans &trans &trans &trans &kp GRAVE
+            &trans &trans &trans &trans &trans &trans                                     &kp POUND &kp N7 &kp N8 &kp N9 &kp DQT  &trans
+            &trans &trans &trans &trans &trans &trans                                   &kp DOLLAR &kp N4 &kp N5 &kp N6 &kp N0    &trans
+            &trans &trans &trans &trans &trans &trans &trans &trans     &kp TILDE &trans &kp UNDER  &kp N1 &kp N2 &kp N3 &kp PRCNT &trans
+                                 &trans &trans &trans &trans &trans        &trans &trans &trans &trans &kp GRAVE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
