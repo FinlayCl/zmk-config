@@ -84,7 +84,7 @@
             #binding-cells = <0>;
             wait-ms = <5>;
             tap-ms = <5>;
-            bindings = <&macro_tap &kp H &kp I &kp C &kp H>;
+            bindings = <&macro_tap &kp H &kp E &kp R &kp E>;
         };
         xmagic: x_sequence {
             compatible = "zmk,behavior-macro";
@@ -169,7 +169,7 @@
         my_lt: my_layer_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "balanced";
             tapping-term-ms = <200>;
             bindings = <&sl>, <&kp>;
             display-name = "My Layer-Tap";
