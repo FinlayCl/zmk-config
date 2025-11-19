@@ -15,5 +15,8 @@ manifest:
     - name: zmk-antecedent-morph
       remote: ssbb
       revision: v1
+    - name: zmk-leader-key
+      remote: urob
+      revision: v0.3
   self:
     path: config
