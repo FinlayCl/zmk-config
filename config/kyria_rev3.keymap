@@ -244,6 +244,16 @@
             bindings = <&mo>, <&smartrepeat>;
             display-name = "Mod-Tap";
         };
+        layersimplerepeat: layer_simple_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            require-prior-idle-ms = <100>;
+            bindings = <&mo>, <&key_repeat>;
+            display-name = "Mod-Tap";
+        };
         magicworkspace: magic_workspace {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -267,7 +277,7 @@
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magicworkspace &kp U    &kp O     &kp Q   &kp DEL
             &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
             &sk LSHFT &kp X &kp K &kp J &kp G &kp W &mt LCTRL NUHS &sk LSHFT          &sl 1    &mt RCTRL SEMI &kp Z     &kp H &aposquote &dotexcl  &comquest &sk RSHFT
-                        &kp SEMI  &kp LGUI &kp LGUI &my_lt 2 SPACE &my_lt 3 LBRC           &mt LALT RBRC &layerrepeat 1 0 &kp TAB &kp RGUI &kp NUHS
+                        &kp SEMI  &kp LGUI &kp LGUI &my_lt 2 SPACE &my_lt 3 LBRC           &mt LALT RBRC &layersimplerepeat 1 0 &kp TAB &kp RGUI &kp NUHS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
