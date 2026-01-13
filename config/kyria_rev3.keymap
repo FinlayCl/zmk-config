@@ -192,6 +192,12 @@
             bindings = <&kp COMMA>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+        backword: back_word {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp LC(BSPC)>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
         leftmouse: left_mouse {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
@@ -275,7 +281,7 @@
             //                     | GUI  | GUI  | SPACE|  RPT   |   FN    |  |  LALT   | LAYER 1 | TAB  | LCTRL  | R-ALT |
             bindings = <
             &kp ESC   &kp V &kp M &kp L &kp C &kp P                                                 &kp B     &magicworkspace &kp U    &kp O     &kp Q   &kp DEL
-            &kp BSPC  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
+            &backword  &kp S &kp T &kp R &kp D &kp Y                                                 &kp F     &kp N &kp E    &kp A     &kp I   &kp RET
             &sk LSHFT &kp X &kp K &kp J &kp G &kp W &mt LCTRL NUHS &sk LSHFT          &sl 1    &mt RCTRL SEMI &kp Z     &kp H &aposquote &dotexcl  &comquest &sk RSHFT
                         &kp SEMI  &kp LGUI &kp LGUI &my_lt 2 SPACE &my_lt 3 LBRC           &mt LALT RBRC &layersimplerepeat 1 0 &kp TAB &kp RGUI &kp NUHS
             >;
