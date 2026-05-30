@@ -163,6 +163,13 @@
             tap-ms = <1>;
             bindings = <&macro_tap &kp F &kp O &kp R>;
         };
+        chathk: chat_hotkey {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings = <&kp FSLH &tog 5>;
+        };
     };
 
     behaviors {
@@ -362,7 +369,7 @@
             bindings = <
             &trans    &kp I     &kp Q  &kp W  &kp E &kp R                                 &kp T &kp Y &kp U &kp I &kp O &kp P
             &kp TAB   &kp LSHFT &kp A  &kp S  &kp D &kp F                                 &kp G &kp H &kp J &kp K &kp L &kp RET
-            &kp LCTRL &kp LALT    &kp Z  &kp X  &kp C &kp V &trans &trans     &trans &trans &kp B &kp N &kp N &kp M &kp COMMA &kp DOT
+            &kp LCTRL &chathk    &kp Z  &kp X  &kp C &kp V &trans &trans     &trans &trans &kp B &kp N &kp N &kp M &kp COMMA &kp DOT
                                 &kp N1 &kp N2 &kp SPACE &kp SPACE &mo 6     &trans &trans &trans   &trans &trans
             >;
 
