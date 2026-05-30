@@ -168,7 +168,14 @@
             #binding-cells = <0>;
             wait-ms = <1>;
             tap-ms = <1>;
-            bindings = <&kp FSLH &tog 5>;
+            bindings = <&kp FSLH &tog 5 &tog 7>;
+        };
+        chatreturn: chat_return {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <1>;
+            tap-ms = <1>;
+            bindings = <&kp RET &tog 5 &tog 7>;
         };
     };
 
@@ -280,7 +287,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "Default Layer";
+            display-name = "Default Layer 0";
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  ESC  |  V  |  M  |  L   |  C   |  P   |                                         |  B   |  MGK   |  U    |  O   |   Q   |  DEL |
             // |  BSPC |  S  |  T  |  R   |  D   |  Y   |                                         |  F   |  N     |  E    |  A   |   I   |  RET |
@@ -296,7 +303,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
         left_symbol_layer {
-            display-name = "Left Symbol Layer";
+            display-name = "Left Symbol Layer 1";
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  LPAR |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
             // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
@@ -312,7 +319,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
         right_symbol_layer {
-            display-name = "Right Symbol Layer";
+            display-name = "Right Symbol Layer 2";
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  LPAR |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
             // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
@@ -328,7 +335,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
         function_layer {
-            display-name = "Function Layer";
+            display-name = "Function Layer 3";
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  LPAR |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
             // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
@@ -344,7 +351,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
         mouse_layer {
-            display-name = "Mouse Layer";
+            display-name = "Mouse Layer 4";
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |  LPAR |      |BT_CLR|BTSEL0|BTSEL1|BTSEL2|                                         |      |      |      |      |      |      |
             // |       |      |      |BTSEL3|BTSEL4|      |                                         |      |      |      |      |      |      |
@@ -360,7 +367,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
         game_layer {
-            display-name = "Game Layer";
+            display-name = "Game Layer 5";
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |       |      |      |      |      |      |                                         |      |      |      |      |      |      |
             // |       |      |      |      |      |      |                                         |      |      |      |      |      |      |
@@ -376,7 +383,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
         game_layer_2 {
-            display-name = "Game Layer 2";
+            display-name = "Game Layer 2 6";
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |       |      |      |      |      |      |                                         |      |      |      |      |      |      |
             // |       |      |      |      |      |      |                                         |      |      |      |      |      |      |
@@ -387,6 +394,22 @@
             &kp G &kp H &kp J &kp K &kp L &tog 5                                 &trans &trans &trans &trans &trans &trans
             &kp B &kp N &kp M &kp COMMA &kp DOT &kp FSLH &trans &trans     &trans &trans &trans &trans &trans &trans &trans &trans
                                  &trans &trans &trans &trans &trans     &trans &trans &trans &trans &trans
+            >;
+
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+        };
+        game_chat_layer {
+            display-name = "Game Chat Layer 7";
+            // ---------------------------------------------------------------------------------------------------------------------------------
+            // |  ESC  |  V  |  M  |  L   |  C   |  P   |                                         |  B   |  MGK   |  U    |  O   |   Q   |  DEL |
+            // |  BSPC |  S  |  T  |  R   |  D   |  Y   |                                         |  F   |  N     |  E    |  A   |   I   |  RET |
+            // | SHIFT |  X  |  K  |  J   |  G   |  W   | L SHIFT| L SHIFT |  | LAYER 1 | L SHIFT |  Z   |  H     |  '    |  ,   |   .   | SHIFT|
+            //                     | GUI  | GUI  | SPACE|  RPT   |   FN    |  |  LALT   | LAYER 1 | TAB  | LCTRL  | R-ALT |
+            bindings = <
+            &trans &trans &trans &trans &trans &trans                                     &trans &trans &trans &trans &trans &trans
+            &trans &trans &trans &trans &trans &trans                                     &trans &trans &trans &trans &trans &chatreturn
+            &trans &trans &trans &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans &trans &trans &trans
+                                 &trans &trans &trans &trans &trans         &trans &trans &trans &trans &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
