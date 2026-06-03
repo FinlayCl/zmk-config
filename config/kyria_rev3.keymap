@@ -25,6 +25,7 @@
 &sk {
     release-after-ms = <500>;
     ignore-modifiers;
+    quick-release;
 };
 
 
